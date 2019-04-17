@@ -1,0 +1,15 @@
+{
+    "name": "manish/ecom",
+    "description": "dbms project",
+    "authors": [
+        {
+            "name": "manishsahani999",
+            "email": "manishsahani1351111@gmail.com"
+        }
+    ],
+    "require": {
+        "symfony/routing": "^4.2",
+        "symfony/http-foundation": "^4.2",
+        "symfony/console": "^4.2"
+    }
+}
