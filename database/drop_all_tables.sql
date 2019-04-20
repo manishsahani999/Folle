@@ -6,7 +6,8 @@ DROP TABLE IF EXISTS
 	products,
 	categories,
 	cart,
-	orders
+	orders,
+	payments
 ;
 
 SET FOREIGN_KEY_CHECKS=1; 

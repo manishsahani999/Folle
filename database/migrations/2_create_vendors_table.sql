@@ -11,9 +11,10 @@ CREATE TABLE vendors
     email VARCHAR(255) NOT NULL UNIQUE,
     age INT NOT NULL,
     company_name VARCHAR(255) NOT NULL,
-    H_no VARCHAR(255) NOT NULL,
+    h_no VARCHAR(255) NOT NULL,
     city VARCHAR(255) NOT NULL,
     country VARCHAR(255) NOT NULL DEFAULT 'INDIA',
+    pincode INT NOT NULL,
     website VARCHAR(255) NULL,
     
     -- constraints
