@@ -44,7 +44,6 @@ class DatabaseConnection
     {
         $stmt = $this->connection->prepare($sql);
         $stmt->execute();
-        // var_dump('done');
         return $stmt;
     }
 

@@ -20,9 +20,4 @@ class DatabaseServiceProvider extends DatabaseConnection
     {
         $this->setDatabaseConfigs($this->configs);
     }
-
-    public function test()
-    {
-        echo "wokking";
-    }
 }

@@ -18,8 +18,11 @@ require __DIR__.'/vendor/autoload.php';
 include __DIR__.'/app/kernel.php';
 
 
-// Routing
-require __DIR__.'/app/providers/RoutingServiceProvider.php';
-$routingServiceProvider = new RoutingServiceProvider();
-$routingServiceProvider->boot();
-$app->bindRouting($routingServiceProvider);
+/*
+|
+|   Include the Routing module
+|
+*/
+$routing = require __DIR__.'/modules/routing.php';
+$app->bind($routing);
+

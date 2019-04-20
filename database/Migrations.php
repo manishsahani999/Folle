@@ -24,4 +24,12 @@ class Migrations
             printf("Migrated %s \n", $filename);
         }
     }
+
+    public function drop()
+    {
+        $sql = file_get_contents($this->location.'\..\drop_all_tables.sql');
+        printf("Droping %s \n", 'all the tables');
+        $this->database->exec($sql);
+        printf("All the tables have been deleted\n");
+    }
 }
